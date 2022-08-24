@@ -1,0 +1,33 @@
+name = "template-research"
+version = "1"
+
+update = "apk update"
+install = "apk add"
+
+packages = [ 
+  "texlive", 
+  "make",
+  "biber",
+  "biblatex",
+  "texmf-dist-latexextra", 
+  "texmf-dist-bibtexextra",
+  "texmf-dist-science",
+  "texmf-dist-formatsextra",
+  "texmf-dist-pictures"
+]
+
+# The three possibilities below are mutually exclusive. (REQUIRED)
+[inherit]
+docker = "alpine:latest"
+
+[project.files]
+"research/main.tex" = "main.tex"
+"research/main.bib" = "main.bib"
+"research/Makefile" = "Makefile"
+"research/.gitignore" = ".gitignore"
+
+# commands for the project (invoked with `texbld run $COMMAND`)
+[project.commands]
+"compile" = "make clean all"
+"watch" = "make watch"
+"clean" = "make clean"

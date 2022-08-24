@@ -1,0 +1,8 @@
+research.*
+!research.tex
+!research.bib
+*.docx
+__pycache__
+pythontex-*
+*.pytxcode
+mktex-venv
