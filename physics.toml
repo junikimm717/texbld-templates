@@ -1,6 +1,9 @@
 name = "texbld-physics"
 version = "1"
 
+install = "apk add"
+packages = [ "python3", "py3-numpy", "py3-scipy", "py3-matplotlib" ]
+
 [inherit.github]
 owner = "junikimm717"
 repository="texbld-templates"
