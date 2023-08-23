@@ -3,11 +3,13 @@ version = "1"
 
 #update = "apk update"
 install = "apk add"
-packages = [ 
+packages = [
   "texlive",
   "make",
   "texmf-dist-latexextra",
   "texmf-dist-fontsextra",
+  "texmf-dist-science",
+  "texmf-dist-pictures",
   "python3", "py3-numpy", "py3-scipy", "py3-pygments"
 ]
 
@@ -17,6 +19,7 @@ docker = "alpine:latest"
 
 [project.files]
 "math/main.tex" = "main.tex"
+"math/evan.sty" = "evan.sty"
 "math/Makefile" = "Makefile"
 "math/.gitignore" = ".gitignore"
 
