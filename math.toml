@@ -19,7 +19,7 @@ docker = "alpine:latest"
 
 [project.files]
 "math/main.tex" = "main.tex"
-"math/evan.sty" = "evan.sty"
+"math/juni.cls" = "juni.cls"
 "math/Makefile" = "Makefile"
 "math/.gitignore" = ".gitignore"
 
